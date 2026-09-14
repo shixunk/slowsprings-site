@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SlowSprings logo">
+  <!-- 外圆底 -->
+  <circle cx="32" cy="32" r="30" fill="#e1f5ee"/>
+
+  <!-- 远山轮廓（极淡） -->
+  <path d="M 4 30 L 18 16 L 28 24 L 40 12 L 52 22 L 60 30 Z"
+        fill="#0f6e56" opacity="0.18"/>
+
+  <!-- 泉眼（右上角，象征源头） -->
+  <circle cx="48" cy="14" r="2.4" fill="#085041"/>
+
+  <!-- 三层水波，由浅至深——「深且缓」的纵深感 -->
+  <path d="M 4 38 Q 14 35, 24 38 T 44 38 T 60 38"
+        stroke="#0f6e56" stroke-width="1.4" fill="none" opacity="0.45" stroke-linecap="round"/>
+  <path d="M 4 46 Q 14 44, 24 46 T 44 46 T 60 46"
+        stroke="#0f6e56" stroke-width="1.6" fill="none" opacity="0.78" stroke-linecap="round"/>
+  <path d="M 4 54 Q 14 52, 24 54 T 44 54 T 60 54"
+        stroke="#085041" stroke-width="1.9" fill="none" opacity="1" stroke-linecap="round"/>
+</svg>
