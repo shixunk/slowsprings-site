@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SlowSprings · 慢泉 | 投资与生活备忘</title>
-  <meta name="description" content="SlowSprings — 碳基与硅基共同维护的全球资产投资备忘。每周一份，写给十年后的自己。" />
+  <meta name="description" content="SlowSprings — 投资与生活的公开备忘。The river of riches runs deep and slow." />
   <meta name="author" content="Matt · SlowSprings" />
-  <meta property="og:title" content="SlowSprings · 慢泉 · 投资与生活备忘" />
-  <meta property="og:description" content="碳基与硅基，共同维护的全球资产投资备忘。慢一点，深一点。" />
+  <meta property="og:title" content="SlowSprings · 慢泉 | 投资与生活备忘" />
+  <meta property="og:description" content="The river of riches runs deep and slow. 碳基与硅基共同维护的慢投资日记。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://slowsprings.com" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E" />
@@ -86,6 +86,12 @@
       margin-bottom: 14px;
       letter-spacing: 1px;
     }
+    .section-lead {
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: -10px 0 26px;
+      font-size: 15px;
+    }
     h2 { font-size: 26px; font-weight: 600; margin-bottom: 24px; }
     h2 .en { color: var(--text-hint); font-weight: 400; font-size: 15px; margin-left: 10px; }
 
@@ -108,6 +114,13 @@
       letter-spacing: -0.5px;
     }
     .hero h1 .hl { color: var(--accent); }
+    .hero-sub {
+      font-size: 17px;
+      color: var(--text-hint);
+      letter-spacing: 4px;
+      margin-bottom: 28px;
+      font-weight: 400;
+    }
     .hero p {
       font-size: 18px;
       color: var(--text-muted);
@@ -196,8 +209,15 @@
     .cover-a { background: #e6f1fb; }
     .cover-b { background: #eeedfe; }
     .cover-c { background: #faeeda; }
+    .cover-d { background: #e3f2eb; }
     .project-body { padding: 20px 22px 24px; flex: 1; display: flex; flex-direction: column; }
-    .project-body h3 { font-size: 17px; font-weight: 600; margin-bottom: 8px; }
+    .project-body h3 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+    .project-subtitle {
+      font-size: 12.5px;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
     .project-body p { font-size: 14px; color: var(--text-muted); flex: 1; margin-bottom: 14px; }
     .project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
     .tag {
@@ -299,8 +319,8 @@
       <a class="logo" href="#top">🌊 SlowSprings</a>
       <div class="nav-links">
         <a href="#about">关于</a>
-        <a href="#projects">近期备忘</a>
-        <a href="#skills">在做什么</a>
+        <a href="#columns">栏目</a>
+        <a href="#doing">在做什么</a>
         <a href="#contact">找到我们</a>
       </div>
     </div>
@@ -308,14 +328,18 @@
 
   <!-- Hero -->
   <header class="hero" id="top">
-    <div class="hero-eyebrow">SLOW · DEEP · FALSIFIABLE</div>
-    <h1>碳与硅，一起<span class="hl">慢慢</span>做投资。</h1>
+    <div class="hero-eyebrow">SLOW · DEEP · HONEST</div>
+    <h1>
+      The river of riches<br />
+      runs <span class="hl">deep</span> and <span class="hl">slow</span>.
+    </h1>
+    <p class="hero-sub">财富之河，深且缓。</p>
     <p>
-      SlowSprings 是我和我的 AI 搭档共同维护的公开备忘——主要关于全球资产（股票、大宗商品、宏观、加密）的周度判断，以及偶尔夹带的私生活。
-      写给十年后的自己。
+      SlowSprings 是我和我的 AI 搭档共同维护的公开备忘——主要关于全球资产与中国市场的周度判断，
+      以及在投资之外，读书、长跑、路上的那些事。写给十年后的自己。
     </p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">读最新一期</a>
+      <a class="btn btn-primary" href="#columns">读最近一期</a>
       <a class="btn btn-ghost" href="#about">关于我</a>
     </div>
   </header>
@@ -327,114 +351,139 @@
     <div class="about-grid">
       <div class="about-text">
         <p>
-          我是 Matt，「碳基 SlowSprings」——一个自由投资者。SlowSprings 是我和「硅基 SlowSprings」（我的 AI 搭档）一起写的公开备忘。
-          主要关于全球资产（股票、大宗商品、宏观、加密）的周度观察、可证伪的逻辑，以及偶尔夹带的私生活。
+          我是 Matt，「碳基 SlowSprings」——一个自由投资者。「慢泉」是我与「硅基 SlowSprings」（我的 AI 搭档）共同维护的公开备忘，
+          微信公众号同名，叫「<strong>慢泉 SlowMoney</strong>」。
         </p>
         <p>
-          我们坚持三件事：<strong>慢一点，深一点，错了就认。</strong>
+          这里写两类东西：一类是<strong>投资</strong>——每周的中国资产备忘、全球大类资产配置思考；
+          一类是<strong>生活</strong>——读书笔记、长跑、旅行。我们相信投资与生活在根本上是一回事：
+          都是关于长期、关于耐心、关于把时间交给对的事情。
+        </p>
+        <p>
+          三件事我们坚持到底：<strong>慢一点，深一点，错了就认。</strong>
           在一个所有人都在抢快钱的时代，慢一点不是错——只是稀缺。
         </p>
         <p>
-          长期目标是：把每周的判断都写下来，五年后再回来对账。是赚是亏，让数字说话。
+          长期目标：把每周的判断都写下来，五年后再回来对账。是赚是亏，让数字说话。
         </p>
       </div>
       <div class="avatar-card">
         <div class="avatar">🌊</div>
         <div class="name">Matt</div>
         <div class="role">自由投资者 · 碳基 SlowSprings</div>
-        <div class="loc">📍 中国 · 长期看全球市场</div>
+        <div class="loc">📍 中国 · 长期看全球</div>
       </div>
     </div>
   </section>
 
-  <!-- 近期备忘 -->
-  <section id="projects" class="reveal">
-    <span class="section-tag">MEMOS</span>
-    <h2>近期备忘<span class="en">Recent memos</span></h2>
+  <!-- 栏目 -->
+  <section id="columns" class="reveal">
+    <span class="section-tag">COLUMNS</span>
+    <h2>在这里写<span class="en">Where we write</span></h2>
+    <p class="section-lead">四个常驻栏目。所有内容均由 Matt（碳基）与硅基 SlowSprings 共同撰写。</p>
     <div class="project-grid">
       <a class="project-card" href="#contact" style="text-decoration:none;color:inherit">
         <div class="project-cover cover-a">📈</div>
         <div class="project-body">
-          <h3>2026 W38 · 全球资产周记</h3>
+          <h3>投资备忘</h3>
+          <div class="project-subtitle">Investment Memo · 周更</div>
           <p>
-            美联储降息预期重定价的一周。黄金与长债同步反弹意味着什么？
-            我们本周看多了哪些、看空了哪些，下周关注什么。
+            每周一份中国资产周记——股票、债券、商品、汇率、流动性。看多了什么、看空了什么、下周关注什么。
+            数字与逻辑都摆出来，错了就认。
           </p>
           <div class="project-tags">
-            <span class="tag">宏观</span><span class="tag">黄金</span><span class="tag">2026.09</span>
+            <span class="tag">中国资产</span><span class="tag">周度</span><span class="tag">可证伪</span>
           </div>
         </div>
       </a>
       <a class="project-card" href="#contact" style="text-decoration:none;color:inherit">
-        <div class="project-cover cover-b">🧾</div>
+        <div class="project-cover cover-b">📚</div>
         <div class="project-body">
-          <h3>2026 Q3 复盘</h3>
+          <h3>读书笔记</h3>
+          <div class="project-subtitle">Reading Notes · 不定期</div>
           <p>
-            三季度结束，按惯例交成绩单。AI 算力链减仓过早的反思，以及
-            黄金仓位意外带来的回报。下季度我们调整了什么。
+            投资、社会、历史、传记——读得慢，记得牢。
+            不写读后感的读后感，只记那些改变判断的书。
           </p>
           <div class="project-tags">
-            <span class="tag">复盘</span><span class="tag">组合</span><span class="tag">2026.09</span>
+            <span class="tag">投资</span><span class="tag">社会</span><span class="tag">历史</span><span class="tag">传记</span>
           </div>
         </div>
       </a>
       <a class="project-card" href="#contact" style="text-decoration:none;color:inherit">
-        <div class="project-cover cover-c">🤝</div>
+        <div class="project-cover cover-c">🏃</div>
         <div class="project-body">
-          <h3>工具说明 · 碳硅协作的笔记流程</h3>
+          <h3>旅游跑步</h3>
+          <div class="project-subtitle">Run &amp; Roam · 不定期</div>
           <p>
-            为什么我们选择把 AI 搭档放进写作流程——它如何负责数据、初稿、纠错，
-            我如何保留判断与品味。一份诚实的分工。
+            用脚步丈量一座城，用眼睛记录一片地。
+            在路上想明白的事情，往往比盯盘时更清醒。
           </p>
           <div class="project-tags">
-            <span class="tag">方法论</span><span class="tag">AI 协作</span><span class="tag">2026.08</span>
+            <span class="tag">长跑</span><span class="tag">旅行</span><span class="tag">在路上</span>
+          </div>
+        </div>
+      </a>
+      <a class="project-card" href="#contact" style="text-decoration:none;color:inherit">
+        <div class="project-cover cover-d">🌍</div>
+        <div class="project-body">
+          <h3>宏观大类资产讨论</h3>
+          <div class="project-subtitle">Global Allocation · 月度/季度</div>
+          <p>
+            全球大类资产配置框架——股票、债券、商品、黄金、现金、加密的相对吸引力。
+            不预测点位，只讨论赔率与仓位。
+          </p>
+          <div class="project-tags">
+            <span class="tag">宏观</span><span class="tag">大类资产</span><span class="tag">全球</span>
           </div>
         </div>
       </a>
     </div>
     <p style="text-align:center;color:var(--text-hint);margin-top:18px;font-size:14px;">
-      完整备忘正在筹备中 · 即将上线邮件订阅
+      公众号同名「慢泉 SlowMoney」同步更新 · 邮箱订阅筹备中
     </p>
   </section>
 
   <!-- 在做什么 -->
-  <section id="skills" class="reveal">
+  <section id="doing" class="reveal">
     <span class="section-tag">WHAT WE DO</span>
     <h2>在做什么<span class="en">What we do</span></h2>
+    <p class="section-lead">两条平行的轨道——一边是投资，一边是生活。两者相互喂养，最后都会回到那张阅读椅。</p>
     <div class="skill-groups">
       <div class="skill-card">
         <h3>📊 投资研究</h3>
         <ul>
-          <li>宏观判断与组合配置</li>
-          <li>行业与公司基本面研究</li>
-          <li>跨资产比较：大宗、外汇、加密</li>
+          <li>中国资产周度备忘</li>
+          <li>全球大类资产配置</li>
+          <li>行业与公司基本面</li>
           <li>每周公开对账，可证伪</li>
         </ul>
       </div>
       <div class="skill-card">
-        <h3>🛠️ 数据与工具</h3>
+        <h3>📖 阅读与笔记</h3>
         <ul>
-          <li>Python · 数据抓取与回测</li>
-          <li>SQL · 财报与宏观库</li>
-          <li>Bloomberg / Wind · 行情底稿</li>
-          <li>Excel + 表格化表达</li>
+          <li>投资 · 价值与行为</li>
+          <li>社会 · 制度与文化</li>
+          <li>历史 · 周期与人物</li>
+          <li>传记 · 长期主义者</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>🏃 长跑与旅行</h3>
+        <ul>
+          <li>城市长跑 · 用脚步认识地方</li>
+          <li>慢旅行 · 不打卡</li>
+          <li>路线笔记与里程记录</li>
+          <li>路上的思考优先于配速</li>
         </ul>
       </div>
       <div class="skill-card">
         <h3>🤖 碳硅协作</h3>
         <ul>
-          <li>LLM 写流程：数据、初稿、纠错</li>
+          <li>LLM 写流程：数据 / 初稿 / 校对</li>
           <li>提示词工程与上下文管理</li>
-          <li>AI 辅助做决策，但判断归我</li>
-          <li>分工方式见「近期备忘」</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <h3>🗣️ 语言</h3>
-        <ul>
-          <li>中文 · 母语</li>
-          <li>英语 · 流利（写作无障碍）</li>
-          <li>读得懂财报原文 / 路演材料</li>
+          <li>AI 辅助做决策，但判断归人</li>
+          <li>分工方式见「栏目 · 工具说明」</li>
         </ul>
       </div>
     </div>
@@ -443,21 +492,22 @@
   <section id="experience" class="reveal">
     <span class="section-tag">TIMELINE</span>
     <h2>轨迹<span class="en">Timeline</span></h2>
+    <p class="section-lead">走到这里，只是一段路，不是一条直线。</p>
     <div class="timeline">
       <div class="tl-item">
         <div class="tl-time">2024 — 至今</div>
         <div class="tl-title">自由投资者 · SlowSprings 主理人</div>
-        <div class="tl-desc">与硅基 SlowSprings 共同维护每周公开备忘，专注全球资产配置与跨市场比较。</div>
+        <div class="tl-desc">与硅基 SlowSprings 共同维护每周公开备忘，专注中国资产周记、全球大类资产配置与读书 / 长跑。</div>
       </div>
       <div class="tl-item">
-        <div class="tl-time">[请填入起止年份]</div>
-        <div class="tl-title">[上一段：机构 / 公司 · 职位]</div>
-        <div class="tl-desc">[一句话说明你做过的事、离开原因。留空则整条不显示]</div>
+        <div class="tl-time">之前 · [请补起止年份]</div>
+        <div class="tl-title">[机构 / 公司 · 职位]</div>
+        <div class="tl-desc">[一句话说明做过的事、为什么离开。留空则整条不显示]</div>
       </div>
       <div class="tl-item">
-        <div class="tl-time">[请填入起止年份]</div>
-        <div class="tl-title">[教育 / 更早经历]</div>
-        <div class="tl-desc">[主修专业 / 关键转折点]</div>
+        <div class="tl-time">更早 · [请补起止年份]</div>
+        <div class="tl-title">[学校 / 关键转折]</div>
+        <div class="tl-desc">[主修 / 决定做投资的起点]</div>
       </div>
     </div>
   </section>
@@ -469,19 +519,22 @@
       <h2>找到我们<span class="en">Get in touch</span></h2>
       <p>
         每周末更新。订阅 / 投稿 / 合作 / 单纯打个招呼，都欢迎来信。
-        我们一般在 48 小时内回复——如果不是，可能在盯盘。
+        我们一般在 48 小时内回复——如果不是，可能在盯盘，或在路上跑步。
       </p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:matt@slowsprings.com">📧 发邮件给 Matt</a>
+        <a class="btn btn-primary" href="mailto:johsnon0827@gmail.com">📧 发邮件给 Matt</a>
         <a class="btn btn-ghost" href="https://github.com/shixunk" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">X / Twitter</a>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">微信公众号</a>
+        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">微信公众号 · 慢泉 SlowMoney</a>
+        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">订阅 RSS · 筹备中</a>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2026 SlowSprings · 碳基与硅基 &nbsp;·&nbsp; <a href="https://slowsprings.com">slowsprings.com</a> &nbsp;·&nbsp; 慢一点，深一点
+    © 2026 SlowSprings · 碳基与硅基 &nbsp;·&nbsp;
+    <a href="https://slowsprings.com">slowsprings.com</a> &nbsp;·&nbsp;
+    The river of riches runs deep and slow &nbsp;·&nbsp;
+    公众号「慢泉 SlowMoney」
   </footer>
 
   <script>
