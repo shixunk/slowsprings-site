@@ -279,3 +279,42 @@ footer a:hover { color: var(--accent); }
   .theory-table { font-size: 13px; }
   .theory-table th, .theory-table td { padding: 9px 10px; }
 }
+
+/* v5 — 彼得·蒂尔传: numbered "feelings" list */
+ol.feelings {
+  counter-reset: feeling;
+  list-style: none;
+  padding: 0;
+  margin: 22px 0;
+}
+ol.feelings > li {
+  position: relative;
+  padding: 14px 18px 14px 56px;
+  margin-bottom: 14px;
+  background: #fafbfb;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  counter-increment: feeling;
+}
+ol.feelings > li::before {
+  content: counter(feeling);
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+ol.feelings > li strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 15.5px;
+  color: var(--text-main);
+}
