@@ -211,3 +211,71 @@ footer a:hover { color: var(--accent); }
 .memo-title { font-size: 19px; font-weight: 600; margin-bottom: 7px; }
 .memo-desc { font-size: 14.5px; color: var(--text-muted); }
 .empty-state { color: var(--text-hint); font-size: 15px; padding: 34px 0; }
+
+/* Article extended styles — used by reading notes 004+ */
+.article-sub {
+  font-size: 16px;
+  color: var(--text-hint);
+  letter-spacing: 1.5px;
+  margin-top: -16px;
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+.quote-divider {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 36px 0;
+  position: relative;
+}
+.quote-divider::before {
+  content: "❝  Qwen 总结引用  ❞";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  padding: 0 14px;
+  font-size: 11px;
+  color: var(--text-hint);
+  letter-spacing: 2px;
+}
+.pull-quote {
+  margin: 28px 0;
+  padding: 18px 24px;
+  border-left: 3px solid var(--accent);
+  background: rgba(45, 90, 71, 0.05);
+  border-radius: 0 6px 6px 0;
+}
+.pull-quote p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-main);
+  margin: 0;
+  font-style: italic;
+}
+.theory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 22px 0;
+  font-size: 14px;
+  background: #fafbfb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.theory-table thead {
+  background: var(--accent);
+  color: #fff;
+}
+.theory-table th, .theory-table td {
+  padding: 11px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.theory-table th { font-weight: 600; font-size: 13px; letter-spacing: 0.3px; }
+.theory-table tr:last-child td { border-bottom: none; }
+.theory-table tbody tr:hover { background: #f0f4f1; }
+@media (max-width: 640px) {
+  .theory-table { font-size: 13px; }
+  .theory-table th, .theory-table td { padding: 9px 10px; }
+}
