@@ -362,3 +362,26 @@ ol.principles > li {
   color: var(--text-muted);
   border-radius: 0 4px 4px 0;
 }
+
+/* v7 — 投资备忘配图（地产链系列） */
+.article-figure {
+  margin: 26px 0;
+}
+.article-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+}
+.article-figure figcaption {
+  margin-top: 9px;
+  font-size: 13.5px;
+  color: var(--text-hint);
+  line-height: 1.7;
+}
+@media (max-width: 640px) {
+  .article-figure { margin: 20px 0; }
+  .article-figure figcaption { font-size: 12.5px; }
+}
