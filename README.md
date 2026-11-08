@@ -47,7 +47,7 @@ memos/003-reading-dalio.html 读书笔记
 | `<title>` | 文章标题 |
 | `meta description` | 一句话摘要（给搜索引擎和分享卡片用） |
 | `meta og:url` | 改成这篇文章的完整网址 |
-| `<span class="section-tag">` | 栏目名：投资备忘 / 读书笔记 / 旅游跑步 / 宏观大类资产 |
+| `<span class="section-tag">` | 栏目名：投资备忘 / 读书笔记 / 大佬投稿 / 宏观大类资产 |
 | `<h1 class="article-title">` | 文章标题 |
 | `.article-meta` | 日期 + 作者 |
 | `.prose` 里的内容 | 正文 |
